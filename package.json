@@ -1,0 +1,23 @@
+{
+  "name": "multiple-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon one/index.js\" \"nodemon two/index.js\"",
+    "start:one": "nodemon one/index.js",
+    "start:two": "nodemon two/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "epxress": "^0.0.1-security",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
